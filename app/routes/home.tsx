@@ -5,6 +5,10 @@ import EffectHook from "~/components/hooks/EffectHook";
 import ContextHookNav from "~/components/hooks/ContextHookNav";
 import { AuthProvider } from "~/AuthContext";
 import RefHook from "~/components/hooks/RefHook";
+import MemoHook from "~/components/hooks/MemoHook";
+import CallbackHook from "~/components/hooks/CallbackHook";
+import Parent from "~/components/liftingStateUp/Parent";
+import Portals from "~/components/Portals/Portals";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -23,6 +27,10 @@ export default function Home() {
         <ContextHookNav />
       </AuthProvider>
       <RefHook />
+      <MemoHook />
+      <CallbackHook />
+      <Parent />
+      <Portals />
     </>
   );
 }
