@@ -1,8 +1,11 @@
-import React from 'react'
+export const dynamic = "force-static"; // This page is statically generated at build time.
 
 const StaticSiteGen = () => {
   return (
-    <div>StaticSiteGen</div>
+    <div>
+      <h1>This is a statically generated site.</h1>
+      <p>Content is generated at build time.</p>
+    </div>
   )
 }
 
