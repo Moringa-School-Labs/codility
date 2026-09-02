@@ -1,8 +1,10 @@
-export const revalidate = 60; // This page is statically generated at build time, but will be revalidated every 10 seconds.
+export const revalidate = 30; // This page is statically generated at build time, but will be revalidated every 10 seconds.
 
 const IncrementalStaticReg = () => {
+  const generatedAt = new Date().toISOString();
+   
   return (
-    <div>IncrementalStaticReg</div>
+    <div>Generated at: {generatedAt}</div>
   )
 }
 
